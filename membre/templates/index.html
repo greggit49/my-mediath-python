@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+{% endblock %}
+
+
+{% block content %}
+<section id="medias">
+    <section class="jumbotron text-center">
+        <h1 class="">Bienvenue a la médiathèque « Notre livre, notre média »</h1>
+    </section>
+</section>
+<div class="container mt-5">
+    <div class="row" id="card-container">
+        {% for media in medias %}
+        <div class="col-md-4">
+            <div class="card mb-4">
+                {% if media.image %}
+                <img src="{{ media.image.url }}" class="card-img-top" alt="Image de {{ media.titre }}">
+                {% else %}
+                <img src="{% static 'default_image.jpg' %}" class="card-img-top" alt="Image par défaut">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ media.titre }}</h5>
+                    <p class="card-text">Auteur: {{ media.auteur_realisateur_artiste }}</p>
+                    <a href="{% url 'media_detail' media.id %}" class="btn btn-primary">Lire plus</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

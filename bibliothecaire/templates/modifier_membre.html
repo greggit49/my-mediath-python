@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'modifier_membre.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Modifier un Membre</h2>
+    <form action="{% url 'modifier_membre' form.instance.pk %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_nom">Nom:</label>
+            {{ form.nom }}
+        </div>
+        <div class="form-group">
+            <label for="id_prenom">Prénom:</label>
+            {{ form.prenom }}
+        </div>
+        <div class="form-group">
+            <label for="id_phone">Téléphone:</label>
+            {{ form.phone }}
+        </div>
+        <div class="form-group">
+            <label for="id_email">Email:</label>
+            {{ form.email }}
+        </div>
+        <div class="form-group">
+            <label for="id_bloque">Bloqué:</label>
+            {{ form.bloque }}
+        </div>
+        <input type="submit" value="Enregistrer" class="btn btn-primary">
+    </form>
+</div>
+{% endblock %}
+

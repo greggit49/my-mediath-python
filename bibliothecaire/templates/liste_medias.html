@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'liste_medias.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Liste des Médias</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Titre</th>
+                <th>Auteur/Réalisateur/Artiste</th>
+                <th>Type</th>
+                <th>Disponible</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for media in medias %}
+            <tr>
+                <td><img src="{{ media.image.url }}" alt="Image de {{ media.titre }}"></td>
+                <td>{{ media.titre }}</td>
+                <td>{{ media.auteur_realisateur_artiste }}</td>
+                <td>{{ media.get_type_media_display }}</td>
+                <td>{{ media.disponible|yesno:"Oui,Non" }}</td>
+                <td>{{ media.description }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

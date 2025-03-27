@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'creer_membre.css' %}" />
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un Membre</title>
+</head>
+<body>
+    <h1>Créer un Membre</h1>
+    <form action="{% url 'create_membre' %}" method="post">
+        {% csrf_token %}
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        
+        <label for="phone">Téléphone:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="bloque">Bloqué:</label>
+        <input type="checkbox" id="bloque" name="bloque"><br><br>
+        
+        <input type="submit" value="Créer">
+    </form>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.title{
+    color: #ffc107 !important;
+}
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 182px);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    position: relative;
+    text-align: center;
+}
+
+
+
+

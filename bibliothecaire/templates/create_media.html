@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'creer_media.css' %}" />
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un Média</title>
+</head>
+<body>
+    <h1>Créer un Média</h1>
+    <form action="{% url 'create_media' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="titre">Titre:</label>
+        <input type="text" id="titre" name="titre" required><br><br>
+        
+        <label for="auteur_realisateur_artiste">Auteur/Réalisateur/Artiste:</label>
+        <input type="text" id="auteur_realisateur_artiste" name="auteur_realisateur_artiste" required><br><br>
+        
+        <label for="type_media">Type de Média:</label>
+        <select id="type_media" name="type_media" required>
+            <option value="livre">Livre</option>
+            <option value="dvd">DVD</option>
+            <option value="cd">CD</option>
+            <option value="jeu">Jeu de Plateau</option>
+        </select><br><br>
+        
+        <label for="disponible">Disponible:</label>
+        <input type="checkbox" id="disponible" name="disponible" checked><br><br>
+        
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image"><br><br>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Créer">
+    </form>
+</body>
+</html>
+{% endblock %}

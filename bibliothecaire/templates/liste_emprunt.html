@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <h2>Liste des Emprunts</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Média</th>
+                <th>Emprunteur</th>
+                <th>Date d'emprunt</th>
+                <th>Date de retour</th>
+                <th>Retourné</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for emprunt in emprunts %}
+            <tr>
+                <td>{{ emprunt.media.titre }}</td>
+                <td>{{ emprunt.emprunteur.nom }} {{ emprunt.emprunteur.prenom }}</td>
+                <td>{{ emprunt.date_emprunt }}</td>
+                <td>{{ emprunt.date_retour }}</td>
+                <td>{{ emprunt.returner|yesno:"Oui,Non" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

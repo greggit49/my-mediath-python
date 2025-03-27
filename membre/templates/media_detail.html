@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'media_detail.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="media-detail">
+        {% if media.image %}
+        <div class="media-image">
+            <img src="{{ media.image.url }}" alt="Image de {{ media.titre }}">
+        </div>
+        {% endif %}
+        <div class="media-info">
+            <h1>{{ media.titre }}</h1>
+            <p>Auteur: {{ media.auteur_realisateur_artiste }}</p>
+            <p>Type: {{ media.get_type_media_display }}</p>
+            <p>Description: {{ media.description }}</p>
+            <p>Disponible: {{ media.disponible|yesno:"Oui,Non" }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
