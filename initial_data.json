@@ -1,0 +1,248 @@
+[
+{
+    "model": "bibliothecaire.membre",
+    "pk": 1,
+    "fields": {
+        "nom": "Doe",
+        "prenom": "Jonh",
+        "phone": "0645684635",
+        "email": "doe.jonh@gmail.com",
+        "bloque": false
+    }
+},
+{
+    "model": "bibliothecaire.membre",
+    "pk": 2,
+    "fields": {
+        "nom": "Dupont",
+        "prenom": "Pierre",
+        "phone": "0745625845",
+        "email": "Dupont@gmail.com",
+        "bloque": false
+    }
+},
+{
+    "model": "bibliothecaire.membre",
+    "pk": 3,
+    "fields": {
+        "nom": "Lachaise",
+        "prenom": "Norbert",
+        "phone": "0746756321",
+        "email": "Norbert@gmail.com",
+        "bloque": true
+    }
+},
+{
+    "model": "bibliothecaire.membre",
+    "pk": 4,
+    "fields": {
+        "nom": "Debout",
+        "prenom": "Paul",
+        "phone": "0654824425",
+        "email": "debout.paul@gmail.com",
+        "bloque": false
+    }
+},
+{
+    "model": "bibliothecaire.membre",
+    "pk": 5,
+    "fields": {
+        "nom": "Surdelle",
+        "prenom": "Léa",
+        "phone": "0654792348",
+        "email": "surdelle@gmail.com",
+        "bloque": false
+    }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 1,
+    "fields": {
+        "titre": "3 (trois) Souhaits (1) : the chosen",
+        "auteur_realisateur_artiste": "Dallas Jenkins",
+        "type_media": "livre",
+        "disponible": true,
+        "image": "media_images/The-Chosen-Season-4.jpg",
+        "description": "serie qui parcours l'histoire de jésus"
+ }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 2,
+    "fields": {
+        "titre": "3 (trois) Souhaits (2) : le jeune messie",
+        "auteur_realisateur_artiste": "Cyrus Nowrasteh",
+        "type_media": "livre",
+        "disponible": true,
+        "image": "media_images/lejeunemessie_boutique-1.png",
+        "description":"Agé de 7 ans , Jésus quitte l'Egypte avec ses parents où ils vivaient exilés, pour retourner à Nazareth. Hérode, qui a entendu parler de l'existence d'un prétendu messie, envoie alors le centurion Severus pourchasser l'enfant"
+  }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 3,
+    "fields": {
+        "titre": "3 (trois) Souhaits (3) : parabole nocturne",
+        "auteur_realisateur_artiste": "jeremy pothin",
+        "type_media": "livre",
+        "disponible": true,
+        "image": "media_images/parabole nocturne.jpg",
+         "description": "La gloire de Dieu, c’est de cacher les choses ; la gloire des rois, c’est d’examiner les choses. Proverbe 25.2 En une nuit, les vies d’Abraham, de Jacob, de Salomon et de tant d’autres ont radicalement changé par un rêve envoyé par Dieu. Dieu désire vous parler par les rêves et vous donner la capacité de les interpréter ! Ce livre va vous aider à : restaurer la culture du rêve dans votre vie, comprendre le langage de Dieu dans vos rêves, comprendre les intentions de Dieu dans les rêves, interpréter vos rêves."
+  }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 4,
+    "fields": {
+        "titre": "ma petite bible",
+        "auteur_realisateur_artiste": "Cecilie Olesen",
+        "type_media": "livre",
+        "disponible": true,
+        "image": "media_images/ma_petite_bible.jpg",
+        "description": "Bible pour enfants s’adresse aux enfants de 0 à 4 ans, ainsi qu’à leurs parents et éducateurs. Elle est présentée sous forme d’une jolie valise pour enfants, réalisée avec des matériaux résistants, à l’épreuve de tous « accidents » enfantins, tels que l’eau, la nourriture ou les secousses."
+  }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 5,
+    "fields": {
+        "titre": "ebloui",
+        "auteur_realisateur_artiste": "dan luiten",
+        "type_media": "cd",
+        "disponible": true,
+        "image": "media_images/ebloui_nMf1vcO.jpg",
+        "description": "Louange Francophone Les titres : 1. Ebloui 2. Que ton règne vienne 3. Reçois (nous chantons) 4. Un souffle nouveau 5. Un souffle n,ouveau (acoustique) 6. Ebloui (acoustique) 7. Reçois (acoustique) 8. Que ton règne vienne (acoustique)"
+ }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 6,
+    "fields": {
+        "titre": "CD Majestueux",
+        "auteur_realisateur_artiste": "Luiten Dan",
+        "type_media": "cd",
+        "disponible": true,
+        "image": "media_images/cd-majestueux-dan-luiten.jpg",
+        "description": "Les Titres et extraits du CD Majestueux Emmanuel"
+
+ }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 7,
+    "fields": {
+        "titre": "ÉVEILLE-TOI MON ÂME ",
+        "auteur_realisateur_artiste": "Collectif Cieux Ouverts",
+        "type_media": "cd",
+        "disponible": true,
+        "image": "media_images/42688-eveille-toi-mon-ame-mp3-2014_1000.webp",
+        "description": "albulm du groupe collectif cieux ouverts"
+  }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 8,
+    "fields": {
+        "titre": ": samson",
+        "auteur_realisateur_artiste": "Bruce MacDonald et Gabriel Sabloff",
+        "type_media": "dvd",
+        "disponible": true,
+        "image": "media_images/Samdon_boutique_gfZq3De.jpg.png",
+        "description": "Découvrez le héros derrière l’épopée biblique ! Samson, un jeune hébreu doté d’une force surnaturelle doit répondre à l’appel de Dieu pour sortir son peuple de l’esclavage. Après avoir perdu l’amour de sa vie, par la faute d’un cruel prince philistin, Samson va entrer en guerre avec l'armée philistine. Il est prêt à tout sacrifier pour venger son amour, son peuple mais aussi son Dieu…"
+}
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 9,
+    "fields": {
+        "titre": "harriet",
+        "auteur_realisateur_artiste": "Kasi Lemmons, Gregory Allen Howard",
+        "type_media": "dvd",
+        "disponible": true,
+        "image": "media_images/harriet.jpg",
+        "description": "L'histoire de Harriet Tubman, qui a aidé plus d'une centaines d'esclaves à fuir le Sud des Etats-Unis après s'être elle-même échappée en 1849."
+  }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 10,
+    "fields": {
+        "titre": "La Voix du Pardon",
+        "auteur_realisateur_artiste": "Andrew Erwin et Jon Erwin",
+        "type_media": "dvd",
+        "disponible": true,
+        "image": "media_images/LaVoixDuPardon_boutique.png",
+        "description": "Au Texas, Bart Millard, 10 ans, abandonné par sa mère, doit subir au quotidien la violence d’un père alcoolique. Des années plus tard au lycée, sa passion pour la musique lui donne l’occasion de s’évader loin de son père, avec son groupe. Mais pour s’accomplir en tant qu’artiste, il va devoir affronter son passé. Trouvera-t-il assez de foi pour pardonner à son père ? Découvrez l’histoire vraie du chanteuart Millard, auteur du double disque de platine : I Can Only Imagine."
+ }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 11,
+    "fields": {
+        "titre": "Jeu Les rescapés du déluge - Bible et Jeux",
+        "auteur_realisateur_artiste": "Dax Lou",
+        "type_media": "jeu",
+        "disponible": true,
+        "image": "media_images/jeu-les-rescapes-du-deluge-bible-et-jeux_qJFTUnG.jpg",
+        "description": "Les rescapés sont de retour dans une nouvelle édition aux illustrations entièrement refaites par l'auteur! Vous avez reçu une mission : construire une arche pour faire entrer les animaux avant que le déluge n'arrive. Pour cela, tous les joueurs coopèrent et construisent chacun différentes pièces de l'arche jusqu'à ce que la construction soit complète. Oserez-vous relever le défi malgré les oppositions et le déluge imminent ?"
+}
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 12,
+    "fields": {
+        "titre": "Jeu des 7 familles du peuple de la Bible",
+        "auteur_realisateur_artiste": "Delvarre V.",
+        "type_media": "jeu",
+        "disponible": true,
+        "image": "media_images/jeu-des-7-familles-du-peuple-de-la-bible_KGNRnRU.jpg",
+        "description": "Retrouvez le célèbre principe du jeu des 7 familles appliqué aux grandes figures de la Bible ! Chaque famille reprend un thème différent et chronologique, dont chaque carte présente un personnage ou un élément clé du thème, à l’aide d’un court texte descriptif et des références bibliques en lien. Les illustrations des différentes familles forment chacune une frise à reconstituer."
+
+    }
+},
+{
+    "model": "bibliothecaire.media",
+    "pk": 13,
+    "fields": {
+        "titre": "Jeu - Memory biblique - Gill Guile",
+        "auteur_realisateur_artiste": "Guile Gill",
+        "type_media": "jeu",
+        "disponible": true,
+        "image": "media_images/jeu-memory-biblique-gill-guile_Ay7JigI.jpg",
+        "description": "Boîte de 30 cartes. 2 cartes de chaque image. 15 paires de cartes. Le Memory biblique est un jeu amusant pour toute la famille, où la mémoire des enfants et des adultes est mise à l'épreuve."
+    }
+},
+{
+    "model": "bibliothecaire.emprunt",
+    "pk": 1,
+    "fields": {
+        "media": 4,
+        "emprunteur": 4,
+        "date_emprunt": "2025-03-14",
+        "date_retour": "2024-03-31",
+        "returner": false
+    }
+},
+{
+    "model": "bibliothecaire.emprunt",
+    "pk": 2,
+    "fields": {
+        "media": 5,
+        "emprunteur": 5,
+        "date_emprunt": "2024-03-14",
+        "date_retour": "2024-03-31",
+        "returner": false
+    }
+},
+{
+    "model": "bibliothecaire.emprunt",
+    "pk": 3,
+    "fields": {
+        "media": 2,
+        "emprunteur": 3,
+        "date_emprunt": "2024-03-11",
+        "date_retour": "2024-03-31",
+        "returner": true
+    }
+}
+]
